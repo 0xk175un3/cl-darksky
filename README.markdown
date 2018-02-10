@@ -1,16 +1,16 @@
-* Cl-Darksky
+# Cl-Darksky
 cl-dakrsky allows you to retrieve the weather via latitude and longitude.
-** Usage
+## Usage
 
 Before starting you need specify your API key:
-#+BEGIN_SRC common-lisp
 
-(setf cl-forest:*api-key* "YOUR_BIG_SECRET")
+```
+(setf cl-darksky:*api-key* "YOUR_BIG_SECRET")
+```
 
-#+END_SRC
+- For currently:
 
-+ For currently:
-#+BEGIN_SRC common-lisp
+```
 (cl-darksky:forecast 45.0455 41.9683)
 ; => (("ozone" . 381.87) ("visibility" . 6.22) ("uvIndex" . 0) ("cloudCover" . 0.92)
 ;     ("windBearing" . 125) ("windGust" . 18.73) ("windSpeed" . 11.24)
@@ -19,10 +19,11 @@ Before starting you need specify your API key:
 ;     ("precipProbability" . 0) ("precipIntensity" . 0)
 ;     ("icon" . "partly-cloudy-night") ("summary" . "Mostly Cloudy")
 ;     ("time" . 1518293286))
-#+END_SRC
+```
 
-+ For hourly:
-#+BEGIN_SRC common-lisp
+- For hourly:
+
+```
 (cl-darksky:forecast-hourly 45.0455 41.9683)
 ; => (("data"
 ;     (("ozone" . 381.93) ("visibility" . 6.22) ("uvIndex" . 0)
@@ -39,19 +40,20 @@ Before starting you need specify your API key:
 ;      ("precipProbability" . 0) ("precipIntensity" . 0) ("icon" . "cloudy")
 ;      ("summary" . "Overcast") ("time" . 1518296400))
 ;      ...
-#+END_SRC
-** Requirements
+```
 
-+ You need an API key to use it (https://darksky.net/dev/). Don't worry, you can use it for free.
+## Requirements
 
-** Author
+- You need an API key to use it (https://darksky.net/dev/). Don't worry, you can use it for free.
 
-+ Artemiy Stepanov
+## Author
 
-** Copyright
+- Artemiy Stepanov
+
+## Copyright
 
 Copyright (c) 2018 Artemiy Stepanov
 
-** License
+## License
 
 Licensed under the BSD 2-clause License.
