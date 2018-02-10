@@ -15,8 +15,10 @@
                "dexador")
   :components ((:module "src"
                 :components
-                ((:file "cl-darksky"))))
-  :description ""
+                ((:file "cl-darksky" :depends-on ("http" "util"))
+                 (:file "http")
+                 (:file "util"))))
+  :description "Get weather via Dark Sky"
   :long-description
   #.(read-file-string
      (subpathname *load-pathname* "README.markdown"))
