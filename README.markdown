@@ -42,6 +42,13 @@ Before starting you need specify your API key:
 ;      ...
 ```
 
+## Installation
+Now available from [Quicklisp](https://www.quicklisp.org/beta/)
+
+```
+(ql:quickload :cl-darksky)
+```
+
 ## Requirements
 
 - You need an API key to use it (https://darksky.net/dev/). Don't worry, you can use it for free.

@@ -12,12 +12,12 @@
   :author "Artemiy Stepanov"
   :license "BSD 2-clause"
   :depends-on ("jonathan"
-               "dexador")
+               "dexador"
+               "alexandria")
   :components ((:module "src"
                 :components
                 ((:file "cl-darksky" :depends-on ("http" "util"))
-                 (:file "http")
-                 (:file "util"))))
+                 (:file "http"))))
   :description "Get weather via Dark Sky"
   :long-description
   #.(read-file-string

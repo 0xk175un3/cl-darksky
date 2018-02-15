@@ -6,4 +6,4 @@
 
 (defun http-get (url)
   (handler-bind ((dex:http-request-failed (dex:retry-request 10)))
-    (dex:get url)))
+    (jonathan:parse (dex:get url) :as :alist)))
