@@ -8,7 +8,7 @@
 |#
 
 (defsystem "cl-darksky"
-  :version "0.1.0"
+  :version "0.1.1"
   :author "Artemiy Stepanov"
   :license "BSD 2-clause"
   :depends-on ("jonathan"
