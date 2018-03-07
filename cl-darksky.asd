@@ -16,7 +16,7 @@
                "alexandria")
   :components ((:module "src"
                 :components
-                ((:file "cl-darksky" :depends-on ("http" "util"))
+                ((:file "cl-darksky" :depends-on ("http"))
                  (:file "http"))))
   :description "Get weather via Dark Sky"
   :long-description
