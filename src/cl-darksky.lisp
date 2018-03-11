@@ -19,7 +19,7 @@
     (alexandria:assoc-value response "currently" :test #'equalp)))
 
 
-(defun forecast (lat lgn)
+(defun forecast-hourly (lat lgn)
   (let* ((url (format nil "https://api.darksky.net/forecast/~A/~A,~A"
                       *api-key*
                       lat
