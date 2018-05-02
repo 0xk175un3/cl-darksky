@@ -3,7 +3,8 @@
   (:use #:cl
         #:cl-darksky.http)
   (:export #:forecast
-           #:forecast-hourly))
+           #:forecast-hourly
+	   #:*api-key*))
 (in-package :cl-darksky)
 
 
